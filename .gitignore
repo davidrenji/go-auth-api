@@ -1,0 +1,63 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below if you want to check in your dependencies)
+# vendor/
+
+# IDE/Editor Folders
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.s
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+# Log files
+*.log
+
+# Node.js Packages
+node_modules/
+
+# Yarn Lock file
+yarn.lock
+
+# Environment Files
+.env
