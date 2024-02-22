@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"os"
 
 	"github.com/davidrenji/go-bootcamp-api/connections"
@@ -17,9 +18,13 @@ func init() {
 }
 
 func main() {
+	// Create a new Fiber instance
 	app := fiber.New()
-
+	// Define routes
 	routes.UserRoutes(app)
-
-	app.Listen(":" + os.Getenv("PORT"))
+	// Start server on port xxxx
+	err := app.Listen(":" + os.Getenv("PORT"))
+	if err != nil {
+		log.Fatalf("Error starting the server: %s", err)
+	}
 }
